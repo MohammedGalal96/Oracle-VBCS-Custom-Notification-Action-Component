@@ -1,0 +1,162 @@
+{
+  "id": "custom_notification/notification",
+  "category": "custom_notification",
+  "displayName": "notification",
+  "iconClass": "oj-ux-ico-notification",
+  "propertyInspector": [
+    {
+      "name": "summary",
+      "label": "Summary",
+      "type": "string",
+      "component": "inputText",
+      "required": true
+    },
+    {
+      "name": "message",
+      "label": "Message",
+      "type": "string",
+      "component": "textArea",
+      "required": false
+    },
+    {
+      "name": "displayMode",
+      "label": "Display Mode",
+      "type": "string",
+      "component": "comboboxOne",
+      "placeholder": "transient",
+      "required": false,
+      "options": [
+        {
+          "label": "transient",
+          "value": "transient"
+        },
+        {
+          "label": "persist",
+          "value": "persist"
+        }
+      ]
+    },
+    {
+      "name": "duration",
+      "label": "Duration",
+      "type": "string",
+      "placeholder": "With 'persist' display mode, duration is ignored",
+      "component": "inputText",
+      "required": false
+    },
+    {
+      "name": "backgroundColor",
+      "label": "Background Color",
+      "type": "string",
+      "placeholder": "Background Color (HEX or RGB)",
+      "component": "inputText",
+      "required": false
+    },
+    {
+      "name": "lineColor",
+      "label": "Line Color",
+      "type": "string",
+      "placeholder": "Line Color (HEX or RGB)",
+      "component": "inputText",
+      "required": false
+    },
+    {
+      "name": "iconColor",
+      "label": "Icon Color",
+      "type": "string",
+      "placeholder": "Icon Color (HEX or RGB)",
+      "component": "inputText",
+      "required": false
+    },
+    {
+      "name": "icon",
+      "label": "Icon",
+      "type": "string",
+      "placeholder": "Icon html",
+      "component": "inputText",
+      "required": false
+    },
+    {
+      "name": "notificationType",
+      "label": "Notification Type",
+      "type": "string",
+      "component": "comboboxOne",
+      "placeholder": "info",
+      "required": false,
+      "options": [
+        {
+          "label": "info",
+          "value": "info"
+        },
+        {
+          "label": "error",
+          "value": "error"
+        },
+        {
+          "label": "warning",
+          "value": "warning"
+        },
+        {
+          "label": "success",
+          "value": "success"
+        },
+        {
+          "label": "custom",
+          "value": "custom"
+        }
+      ]
+    },
+    {
+      "name": "position",
+      "label": "Position",
+      "type": "string",
+      "component": "comboboxOne",
+      "placeholder": "top-middle",
+      "required": false,
+      "options": [
+        {
+          "label": "Top Left",
+          "value": "top-left"
+        },
+        {
+          "label": "Top Middle",
+          "value": "top-middle"
+        },
+        {
+          "label": "Top Right",
+          "value": "top-right"
+        },
+        {
+          "label": "Bottom Left",
+          "value": "bottom-left"
+        },
+        {
+          "label": "Bottom Middle",
+          "value": "bottom-middle"
+        },
+        {
+          "label": "Bottom Right",
+          "value": "bottom-right"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "label": "Theme",
+      "type": "string",
+      "component": "comboboxOne",
+      "placeholder": "Light",
+      "required": false,
+      "options": [
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        }
+      ]
+    }
+  ]
+}
